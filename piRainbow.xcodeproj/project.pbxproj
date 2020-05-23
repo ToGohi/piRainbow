@@ -19,11 +19,14 @@
 		1458C42924791F09003ED594 /* PiDeliveryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42824791F09003ED594 /* PiDeliveryStore.swift */; };
 		1458C42C2479211E003ED594 /* PiDeliveryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42B2479211E003ED594 /* PiDeliveryWorker.swift */; };
 		1458C435247928C0003ED594 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42F247928C0003ED594 /* MainPresenter.swift */; };
-		1458C436247928C0003ED594 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C430247928C0003ED594 /* MainWorker.swift */; };
 		1458C437247928C0003ED594 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C431247928C0003ED594 /* MainRouter.swift */; };
 		1458C438247928C0003ED594 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C432247928C0003ED594 /* MainModels.swift */; };
 		1458C439247928C0003ED594 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C433247928C0003ED594 /* MainViewController.swift */; };
 		1458C43A247928C0003ED594 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C434247928C0003ED594 /* MainInteractor.swift */; };
+		1458C43D24792DE1003ED594 /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C43C24792DE1003ED594 /* ExtString.swift */; };
+		1458C43F24792F69003ED594 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C43E24792F69003ED594 /* MainViewController+TableView.swift */; };
+		1458C44224794179003ED594 /* PiColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C44124794179003ED594 /* PiColor.swift */; };
+		1458C44424794383003ED594 /* ExtUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C44324794383003ED594 /* ExtUIColor.swift */; };
 		D00934D537B772F5E5F49484 /* Pods_piRainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032578F53AE852622EC847A5 /* Pods_piRainbow.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +46,14 @@
 		1458C42824791F09003ED594 /* PiDeliveryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDeliveryStore.swift; sourceTree = "<group>"; };
 		1458C42B2479211E003ED594 /* PiDeliveryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDeliveryWorker.swift; sourceTree = "<group>"; };
 		1458C42F247928C0003ED594 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		1458C430247928C0003ED594 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
 		1458C431247928C0003ED594 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		1458C432247928C0003ED594 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
 		1458C433247928C0003ED594 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1458C434247928C0003ED594 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		1458C43C24792DE1003ED594 /* ExtString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
+		1458C43E24792F69003ED594 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		1458C44124794179003ED594 /* PiColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiColor.swift; sourceTree = "<group>"; };
+		1458C44324794383003ED594 /* ExtUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtUIColor.swift; sourceTree = "<group>"; };
 		8DF591B9E14E487014FF8CAB /* Pods-piRainbow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piRainbow.release.xcconfig"; path = "Target Support Files/Pods-piRainbow/Pods-piRainbow.release.xcconfig"; sourceTree = "<group>"; };
 		9E11FC2BEC8D7E0FA261B859 /* Pods-piRainbow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piRainbow.debug.xcconfig"; path = "Target Support Files/Pods-piRainbow/Pods-piRainbow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +104,8 @@
 		1458C41C24791C02003ED594 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1458C43B24792DBA003ED594 /* Extensions */,
+				1458C4402479416C003ED594 /* Models */,
 				1458C41D24791C1C003ED594 /* Network */,
 				1458C41E24791C22003ED594 /* Router */,
 				1458C42724791EFA003ED594 /* Stores */,
@@ -154,13 +162,30 @@
 			isa = PBXGroup;
 			children = (
 				1458C42F247928C0003ED594 /* MainPresenter.swift */,
-				1458C430247928C0003ED594 /* MainWorker.swift */,
 				1458C431247928C0003ED594 /* MainRouter.swift */,
 				1458C432247928C0003ED594 /* MainModels.swift */,
 				1458C433247928C0003ED594 /* MainViewController.swift */,
 				1458C434247928C0003ED594 /* MainInteractor.swift */,
+				1458C43E24792F69003ED594 /* MainViewController+TableView.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1458C43B24792DBA003ED594 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1458C43C24792DE1003ED594 /* ExtString.swift */,
+				1458C44324794383003ED594 /* ExtUIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1458C4402479416C003ED594 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1458C44124794179003ED594 /* PiColor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DEB94A37AA4B8516B4E7B882 /* Pods */ = {
@@ -313,20 +338,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1458C44224794179003ED594 /* PiColor.swift in Sources */,
 				1458C42224791C95003ED594 /* Constants.swift in Sources */,
+				1458C43F24792F69003ED594 /* MainViewController+TableView.swift in Sources */,
 				1458C42924791F09003ED594 /* PiDeliveryStore.swift in Sources */,
 				1458C40824790ABA003ED594 /* AppDelegate.swift in Sources */,
 				1458C42424791CCD003ED594 /* AccessTokenAdapter.swift in Sources */,
 				1458C437247928C0003ED594 /* MainRouter.swift in Sources */,
 				1458C435247928C0003ED594 /* MainPresenter.swift in Sources */,
 				1458C439247928C0003ED594 /* MainViewController.swift in Sources */,
+				1458C43D24792DE1003ED594 /* ExtString.swift in Sources */,
 				1458C43A247928C0003ED594 /* MainInteractor.swift in Sources */,
 				1458C42C2479211E003ED594 /* PiDeliveryWorker.swift in Sources */,
 				1458C42024791C6B003ED594 /* Network.swift in Sources */,
 				1458C42624791D8D003ED594 /* PiDeliveryRouter.swift in Sources */,
-				1458C436247928C0003ED594 /* MainWorker.swift in Sources */,
 				1458C438247928C0003ED594 /* MainModels.swift in Sources */,
 				1458C40A24790ABA003ED594 /* SceneDelegate.swift in Sources */,
+				1458C44424794383003ED594 /* ExtUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +505,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.464apptonio.com.piRainbow;
+				PRODUCT_BUNDLE_IDENTIFIER = piRainbow.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -495,10 +523,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.464apptonio.com.piRainbow;
+				PRODUCT_BUNDLE_IDENTIFIER = piRainbow.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

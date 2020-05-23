@@ -12,20 +12,46 @@
 
 import UIKit
 
-protocol MainPresentationLogic
-{
-  func presentSomething(response: Main.Something.Response)
+protocol MainPresentationLogic {
+  func presentPiComponents(response: Main.PiNumbers.Response)
 }
 
-class MainPresenter: MainPresentationLogic
-{
+class MainPresenter: MainPresentationLogic {
+
   weak var viewController: MainDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: Main.Something.Response)
-  {
-    let viewModel = Main.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
+
+  private func getPiColors(from components: [CGFloat]) -> [PiColor] {
+
+    var index = 1
+    var red: CGFloat = 0
+    var green: CGFloat = 0
+    var blue: CGFloat = 0
+    var colors: [PiColor] = []
+    for component in components {
+
+      switch index {
+      case 1:
+        red = component
+      case 2:
+        green = component
+      case 3:
+        blue = component
+        colors.append(PiColor(red: red, green: green, blue: blue))
+        index = 0
+      default:
+        break
+      }
+      index += 1
+    }
+    return colors
   }
+
+  // MARK: MainPresentationLogic
+
+  func presentPiComponents(response: Main.PiNumbers.Response) {
+    let colors = getPiColors(from: response.components)
+    let viewModel = Main.PiNumbers.ViewModel(colors: colors)
+    viewController?.displayPiColors(viewModel: viewModel)
+  }
+
 }

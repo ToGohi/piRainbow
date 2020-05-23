@@ -12,20 +12,22 @@
 
 import UIKit
 
-enum Main
-{
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
+enum Main {
+
+  enum PiNumbers {
+
+    struct Request {
+      let start: Int
+      let numberOfDigits: Int
     }
-    struct Response
-    {
+
+    struct Response {
+      let components: [CGFloat]
     }
-    struct ViewModel
-    {
+
+    struct ViewModel {
+      let colors: [PiColor]
     }
+
   }
 }
