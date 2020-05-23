@@ -1,0 +1,6 @@
+Pods
+.DS_Store
+Podfile.lock
+piRainbow.xcodeproj/project.xcworkspace/xcuserdata
+piRainbow.xcodeproj/xcuserdata
+piRainbow.xcworkspace/xcuserdata

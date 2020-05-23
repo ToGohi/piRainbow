@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1458C40824790ABA003ED594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C40724790ABA003ED594 /* AppDelegate.swift */; };
+		1458C40A24790ABA003ED594 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C40924790ABA003ED594 /* SceneDelegate.swift */; };
+		1458C40F24790ABA003ED594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1458C40D24790ABA003ED594 /* Main.storyboard */; };
+		1458C41124790ABB003ED594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1458C41024790ABB003ED594 /* Assets.xcassets */; };
+		1458C41424790ABB003ED594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1458C41224790ABB003ED594 /* LaunchScreen.storyboard */; };
+		1458C42024791C6B003ED594 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C41F24791C6B003ED594 /* Network.swift */; };
+		1458C42224791C95003ED594 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42124791C95003ED594 /* Constants.swift */; };
+		1458C42424791CCD003ED594 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42324791CCD003ED594 /* AccessTokenAdapter.swift */; };
+		1458C42624791D8D003ED594 /* PiDeliveryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42524791D8D003ED594 /* PiDeliveryRouter.swift */; };
+		1458C42924791F09003ED594 /* PiDeliveryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42824791F09003ED594 /* PiDeliveryStore.swift */; };
+		1458C42C2479211E003ED594 /* PiDeliveryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42B2479211E003ED594 /* PiDeliveryWorker.swift */; };
+		1458C435247928C0003ED594 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C42F247928C0003ED594 /* MainPresenter.swift */; };
+		1458C436247928C0003ED594 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C430247928C0003ED594 /* MainWorker.swift */; };
+		1458C437247928C0003ED594 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C431247928C0003ED594 /* MainRouter.swift */; };
+		1458C438247928C0003ED594 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C432247928C0003ED594 /* MainModels.swift */; };
+		1458C439247928C0003ED594 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C433247928C0003ED594 /* MainViewController.swift */; };
+		1458C43A247928C0003ED594 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458C434247928C0003ED594 /* MainInteractor.swift */; };
+		D00934D537B772F5E5F49484 /* Pods_piRainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032578F53AE852622EC847A5 /* Pods_piRainbow.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032578F53AE852622EC847A5 /* Pods_piRainbow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piRainbow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1458C40424790ABA003ED594 /* piRainbow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piRainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1458C40724790ABA003ED594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1458C40924790ABA003ED594 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1458C40E24790ABA003ED594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1458C41024790ABB003ED594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1458C41324790ABB003ED594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1458C41524790ABB003ED594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1458C41F24791C6B003ED594 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1458C42124791C95003ED594 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1458C42324791CCD003ED594 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
+		1458C42524791D8D003ED594 /* PiDeliveryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDeliveryRouter.swift; sourceTree = "<group>"; };
+		1458C42824791F09003ED594 /* PiDeliveryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDeliveryStore.swift; sourceTree = "<group>"; };
+		1458C42B2479211E003ED594 /* PiDeliveryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDeliveryWorker.swift; sourceTree = "<group>"; };
+		1458C42F247928C0003ED594 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		1458C430247928C0003ED594 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		1458C431247928C0003ED594 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		1458C432247928C0003ED594 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		1458C433247928C0003ED594 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1458C434247928C0003ED594 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		8DF591B9E14E487014FF8CAB /* Pods-piRainbow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piRainbow.release.xcconfig"; path = "Target Support Files/Pods-piRainbow/Pods-piRainbow.release.xcconfig"; sourceTree = "<group>"; };
+		9E11FC2BEC8D7E0FA261B859 /* Pods-piRainbow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piRainbow.debug.xcconfig"; path = "Target Support Files/Pods-piRainbow/Pods-piRainbow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1458C40124790AB9003ED594 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00934D537B772F5E5F49484 /* Pods_piRainbow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1458C3FB24790AB9003ED594 = {
+			isa = PBXGroup;
+			children = (
+				1458C40624790ABA003ED594 /* piRainbow */,
+				1458C40524790ABA003ED594 /* Products */,
+				DEB94A37AA4B8516B4E7B882 /* Pods */,
+				E754A60EDA2D21302A5937C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1458C40524790ABA003ED594 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1458C40424790ABA003ED594 /* piRainbow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1458C40624790ABA003ED594 /* piRainbow */ = {
+			isa = PBXGroup;
+			children = (
+				1458C41C24791C02003ED594 /* Common */,
+				1458C42E247928AC003ED594 /* Scenes */,
+				1458C42D247928A1003ED594 /* Storyboards */,
+				1458C41024790ABB003ED594 /* Assets.xcassets */,
+				1458C41224790ABB003ED594 /* LaunchScreen.storyboard */,
+				1458C41524790ABB003ED594 /* Info.plist */,
+			);
+			path = piRainbow;
+			sourceTree = "<group>";
+		};
+		1458C41C24791C02003ED594 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1458C41D24791C1C003ED594 /* Network */,
+				1458C41E24791C22003ED594 /* Router */,
+				1458C42724791EFA003ED594 /* Stores */,
+				1458C42A2479210C003ED594 /* Worker */,
+				1458C40724790ABA003ED594 /* AppDelegate.swift */,
+				1458C42124791C95003ED594 /* Constants.swift */,
+				1458C40924790ABA003ED594 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1458C41D24791C1C003ED594 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1458C42324791CCD003ED594 /* AccessTokenAdapter.swift */,
+				1458C41F24791C6B003ED594 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1458C41E24791C22003ED594 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1458C42524791D8D003ED594 /* PiDeliveryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1458C42724791EFA003ED594 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				1458C42824791F09003ED594 /* PiDeliveryStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		1458C42A2479210C003ED594 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				1458C42B2479211E003ED594 /* PiDeliveryWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		1458C42D247928A1003ED594 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1458C40D24790ABA003ED594 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1458C42E247928AC003ED594 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1458C42F247928C0003ED594 /* MainPresenter.swift */,
+				1458C430247928C0003ED594 /* MainWorker.swift */,
+				1458C431247928C0003ED594 /* MainRouter.swift */,
+				1458C432247928C0003ED594 /* MainModels.swift */,
+				1458C433247928C0003ED594 /* MainViewController.swift */,
+				1458C434247928C0003ED594 /* MainInteractor.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DEB94A37AA4B8516B4E7B882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E11FC2BEC8D7E0FA261B859 /* Pods-piRainbow.debug.xcconfig */,
+				8DF591B9E14E487014FF8CAB /* Pods-piRainbow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E754A60EDA2D21302A5937C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032578F53AE852622EC847A5 /* Pods_piRainbow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1458C40324790AB9003ED594 /* piRainbow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1458C41824790ABB003ED594 /* Build configuration list for PBXNativeTarget "piRainbow" */;
+			buildPhases = (
+				64FBA10616D5F6FF6D51DAAD /* [CP] Check Pods Manifest.lock */,
+				1458C40024790AB9003ED594 /* Sources */,
+				1458C40124790AB9003ED594 /* Frameworks */,
+				1458C40224790AB9003ED594 /* Resources */,
+				0F4587FC38896BA3FBA7FB4D /* [CP] Embed Pods Frameworks */,
+				1458C41B24791B8A003ED594 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = piRainbow;
+			productName = piRainbow;
+			productReference = 1458C40424790ABA003ED594 /* piRainbow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1458C3FC24790AB9003ED594 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Antonio Gonzalez Hidalgo";
+				TargetAttributes = {
+					1458C40324790AB9003ED594 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 1458C3FF24790AB9003ED594 /* Build configuration list for PBXProject "piRainbow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1458C3FB24790AB9003ED594;
+			productRefGroup = 1458C40524790ABA003ED594 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1458C40324790AB9003ED594 /* piRainbow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1458C40224790AB9003ED594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1458C41424790ABB003ED594 /* LaunchScreen.storyboard in Resources */,
+				1458C41124790ABB003ED594 /* Assets.xcassets in Resources */,
+				1458C40F24790ABA003ED594 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F4587FC38896BA3FBA7FB4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piRainbow/Pods-piRainbow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piRainbow/Pods-piRainbow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-piRainbow/Pods-piRainbow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1458C41B24791B8A003ED594 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		64FBA10616D5F6FF6D51DAAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-piRainbow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1458C40024790AB9003ED594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1458C42224791C95003ED594 /* Constants.swift in Sources */,
+				1458C42924791F09003ED594 /* PiDeliveryStore.swift in Sources */,
+				1458C40824790ABA003ED594 /* AppDelegate.swift in Sources */,
+				1458C42424791CCD003ED594 /* AccessTokenAdapter.swift in Sources */,
+				1458C437247928C0003ED594 /* MainRouter.swift in Sources */,
+				1458C435247928C0003ED594 /* MainPresenter.swift in Sources */,
+				1458C439247928C0003ED594 /* MainViewController.swift in Sources */,
+				1458C43A247928C0003ED594 /* MainInteractor.swift in Sources */,
+				1458C42C2479211E003ED594 /* PiDeliveryWorker.swift in Sources */,
+				1458C42024791C6B003ED594 /* Network.swift in Sources */,
+				1458C42624791D8D003ED594 /* PiDeliveryRouter.swift in Sources */,
+				1458C436247928C0003ED594 /* MainWorker.swift in Sources */,
+				1458C438247928C0003ED594 /* MainModels.swift in Sources */,
+				1458C40A24790ABA003ED594 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1458C40D24790ABA003ED594 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1458C40E24790ABA003ED594 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1458C41224790ABB003ED594 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1458C41324790ABB003ED594 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1458C41624790ABB003ED594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1458C41724790ABB003ED594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1458C41924790ABB003ED594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E11FC2BEC8D7E0FA261B859 /* Pods-piRainbow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = piRainbow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.464apptonio.com.piRainbow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1458C41A24790ABB003ED594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF591B9E14E487014FF8CAB /* Pods-piRainbow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = piRainbow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.464apptonio.com.piRainbow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1458C3FF24790AB9003ED594 /* Build configuration list for PBXProject "piRainbow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1458C41624790ABB003ED594 /* Debug */,
+				1458C41724790ABB003ED594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1458C41824790ABB003ED594 /* Build configuration list for PBXNativeTarget "piRainbow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1458C41924790ABB003ED594 /* Debug */,
+				1458C41A24790ABB003ED594 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1458C3FC24790AB9003ED594 /* Project object */;
+}
