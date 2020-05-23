@@ -39,9 +39,9 @@ enum PiDeliveryRouter: URLRequestConvertible {
     urlRequest.cachePolicy = .returnCacheDataElseLoad
 
     switch self {
-      case .getPiDigits(start: let start, numberOfDigits: let numberOfDigits):
-        urlRequest = try URLEncoding.default.encode(urlRequest, with: ["start": start,
-                                                                       "numberOfDigits": numberOfDigits])
+    case .getPiDigits(start: let start, numberOfDigits: let numberOfDigits):
+      urlRequest = try URLEncoding.default.encode(urlRequest, with: ["start": start,
+                                                                     "numberOfDigits": numberOfDigits])
     }
     return urlRequest
   }

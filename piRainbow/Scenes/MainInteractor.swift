@@ -12,30 +12,46 @@
 
 import UIKit
 
-protocol MainBusinessLogic
-{
-  func doSomething(request: Main.Something.Request)
+protocol MainBusinessLogic {
+  func getPiNumbers(request: Main.PiNumbers.Request)
 }
 
-protocol MainDataStore
-{
-  //var name: String { get set }
+protocol MainDataStore {
 }
 
-class MainInteractor: MainBusinessLogic, MainDataStore
-{
+class MainInteractor: MainBusinessLogic, MainDataStore {
+
   var presenter: MainPresentationLogic?
-  var worker: MainWorker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: Main.Something.Request)
-  {
-    worker = MainWorker()
-    worker?.doSomeWork()
-    
-    let response = Main.Something.Response()
-    presenter?.presentSomething(response: response)
+  var piDeliveryWorker = PiDeliveryWorker(store: PiDeliveryStore())
+  var bufferComponent: String = ""
+
+  // MARK: MainBusinessLogic
+
+  func getPiNumbers(request: Main.PiNumbers.Request) {
+
+    piDeliveryWorker.getPiNumbers(start: request.start, numberOfDigits: request.numberOfDigits) { (result) in
+      switch result {
+      case .success(result: let piResponse):
+
+        guard let piContent = piResponse.content else { return }
+        let content = self.bufferComponent + piContent
+        var components = content.getPiComponents()
+        if let last = components.last, last < 25 {
+          self.bufferComponent = String(format: "%.0f", last)
+          components.removeLast()
+        } else {
+          self.bufferComponent = ""
+        }
+        print("components: \(components) buffer: \(self.bufferComponent)")
+
+        let response = Main.PiNumbers.Response(components: components)
+        self.presenter?.presentPiComponents(response: response)
+
+      case .failure:
+        break
+      }
+    }
+
   }
+
 }
